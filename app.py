@@ -1,3 +1,4 @@
+
 # import flask 
 from flask import *
 import pymysql
@@ -27,7 +28,7 @@ def signup():
     print("our phone is",phone)
 
     # establish connection in database 
-    connection =pymysql.connect(host="localhost",user="root",password="",database="higgssokogarden")
+    connection =pymysql.connect(host="localhost",user="root",password="",database="higgshermaton")
 
     # define your cursor 
     cursor=connection.cursor()
@@ -57,7 +58,7 @@ def login():
     email=request.form["email"]
     password=request.form["password"]
     # 4.establish connection to database 
-    connection=pymysql.connect(host="localhost",user="root",database="higgssokogarden",password="")
+    connection=pymysql.connect(host="localhost",user="root",database="hermaton",password="")
     # 5.define your cursor 
     cursor=connection.cursor(pymysql.cursors.DictCursor)
     # 6.sql to select 
